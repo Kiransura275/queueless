@@ -76,15 +76,15 @@ function PrintableToken({ token, serviceLabel, orgName, location }) {
         </div>
         <div style={{ padding: '32px 24px 20px', borderBottom: '1px dashed #D4CFC8', textAlign: 'center' }}>
           <div style={{ fontSize: '9px', letterSpacing: '0.2em', textTransform: 'uppercase', color: '#8A8278', marginBottom: '8px' }}>{serviceLabel}</div>
-          <div style={{ fontSize: '96px', fontWeight: '700', lineHeight: 1, letterSpacing: '-0.04em', color: '#1A1714' }}>#{tokenNum}</div>
+          <div style={{ fontSize: '96px', fontWeight: '700', lineHeight: 1, letterSpacing: '-0.04em', color: '#E6ECEB' }}>#{tokenNum}</div>
         </div>
-        <div style={{ padding: '14px 24px', borderBottom: '1px dashed #D4CFC8' }}>
-          <div style={{ fontSize: '8px', letterSpacing: '0.18em', textTransform: 'uppercase', color: '#8A8278', marginBottom: '3px' }}>Issued</div>
-          <div style={{ fontSize: '11px', color: '#4A4542' }}>{issuedAt}</div>
+        <div style={{ padding: '14px 24px', borderBottom: '1px dashed #2A333A' }}>
+          <div style={{ fontSize: '8px', letterSpacing: '0.18em', textTransform: 'uppercase', color: '#9AA7A5', marginBottom: '3px' }}>Issued</div>
+          <div style={{ fontSize: '11px', color: '#E6ECEB' }}>{issuedAt}</div>
         </div>
-        <div style={{ padding: '12px 24px', background: '#F7F3EC' }}>
-          <div style={{ fontSize: '8px', letterSpacing: '0.15em', textTransform: 'uppercase', color: '#8A8278', marginBottom: '4px' }}>Track your position</div>
-          <div style={{ fontSize: '9px', color: '#5C5854', fontFamily: 'monospace', wordBreak: 'break-all' }}>{shortUrl}</div>
+        <div style={{ padding: '12px 24px', background: '#1B2228' }}>
+          <div style={{ fontSize: '8px', letterSpacing: '0.15em', textTransform: 'uppercase', color: '#9AA7A5', marginBottom: '4px' }}>Track your position</div>
+          <div style={{ fontSize: '9px', color: '#E6ECEB', fontFamily: 'monospace', wordBreak: 'break-all' }}>{shortUrl}</div>
         </div>
       </div>
     </div>
