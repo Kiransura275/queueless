@@ -8,24 +8,21 @@ export default {
   theme: {
     extend: {
       colors: {
-        // Light (default)
-        paper:    '#F7F3EC',
-        cream:    '#FBF7F0',
-        ink:      '#171615',
-        graphite: '#5C5854',
-        ash:      '#A9A39B',
-        rule:     '#E5DFD3',
-        accent:   '#C84B26',
-        'accent-deep': '#9F3A1B',
-        success:  '#3F6F4F',
-        warn:     '#B8881C',
+        // SARAL dark SaaS palette
+        paper:    '#101418', // page / surface background
+        cream:    '#1B2228', // card / elevated surface
+        ink:      '#E6ECEB', // primary text
+        graphite: '#9AA7A5', // secondary text
+        ash:      '#6B7B79', // muted text
+        rule:     '#2A333A', // subtle dark grey borders
+        accent:   '#53C7B0', // primary accent (teal)
+        'accent-deep': '#3E9E8A', // accent hover state
+        success:  '#4ADE80',
+        warn:     '#FBBF24',
       },
       fontFamily: {
-        // Display serif for numbers - Instrument Serif is free via Google Fonts
-        // and has the high-contrast, vintage-ticket feel we want.
-        display: ['"Instrument Serif"', 'Georgia', 'serif'],
-        // Body grotesque - DM Sans is clean, refined, NOT Inter.
-        sans:    ['"DM Sans"', 'system-ui', 'sans-serif'],
+        // Inter body/display — clean, elegant, minimalist SaaS typography.
+        sans:    ['"Inter"', 'system-ui', 'sans-serif'],
         mono:    ['"JetBrains Mono"', 'ui-monospace', 'monospace'],
       },
       letterSpacing: {
@@ -38,14 +35,9 @@ export default {
       },
       animation: {
         'pulse-slow': 'pulse 2.5s cubic-bezier(0.4, 0, 0.6, 1) infinite',
-        'fade-up': 'fade-up 0.5s ease-out',
         'shake': 'shake 0.5s ease-in-out',
       },
       keyframes: {
-        'fade-up': {
-          '0%': { opacity: 0, transform: 'translateY(8px)' },
-          '100%': { opacity: 1, transform: 'translateY(0)' },
-        },
         'shake': {
           '0%, 100%': { transform: 'translateX(0)' },
           '20%': { transform: 'translateX(-8px)' },
