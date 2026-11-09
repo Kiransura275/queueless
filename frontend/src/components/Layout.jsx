@@ -34,9 +34,6 @@ export default function Layout({ children }) {
   if (onDisplay) return <ErrorBoundary key={loc.pathname}>{children}</ErrorBoundary>;
 
   const logoTarget = user ? '/admin' : staff ? '/staff' : '/';
-  const logoSrc = dark
-    ? '/svg/queueless-wordmark-dark.svg'
-    : '/svg/queueless-wordmark-light.svg';
 
   const handleLogout = async (isStaff = false) => {
     setMobileOpen(false);
@@ -92,11 +89,7 @@ export default function Layout({ children }) {
         <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 xl:px-10 py-3 flex items-center justify-between gap-4">
           {/* Logo only — org identity lives in the footer status bar */}
           <Link to={logoTarget} className="flex items-center shrink-0 group">
-            <img
-              src={logoSrc}
-              alt="QueueLess"
-              className="h-6 sm:h-7 w-auto transition-opacity duration-200"
-            />
+            <span className="font-medium text-ink tracking-tight">saral</span>
           </Link>
 
           {/* Desktop nav */}
@@ -427,7 +420,7 @@ export default function Layout({ children }) {
       <footer className="border-t border-rule mt-12 print:hidden">
         <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 xl:px-10 py-4 flex flex-col sm:flex-row gap-2 sm:gap-6 items-start sm:items-center justify-between text-xs text-graphite">
           <div className="flex items-center gap-2 min-w-0">
-            {cfg?.orgName && cfg.orgName !== 'QueueLess' ? (
+            {cfg?.orgName && cfg.orgName !== 'SARAL' ? (
               <span
                 className="flex items-center gap-1.5 min-w-0 truncate"
                 title={cfg.location ? `${cfg.orgName} · ${cfg.location}` : cfg.orgName}
@@ -442,7 +435,7 @@ export default function Layout({ children }) {
                 )}
               </span>
             ) : (
-              <span className="font-medium text-ink">QueueLess</span>
+              <span className="font-medium text-ink">SARAL</span>
             )}
           </div>
           <span className="flex items-center gap-3">

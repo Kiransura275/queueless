@@ -46,7 +46,7 @@ export default function Credits() {
 
   return (
     <div className="max-w-4xl mx-auto px-6 py-16">
-      <div className="label mb-3">QueueLess · Credits</div>
+      <div className="label mb-3">SARAL · Credits</div>
       <h1 className="font-display text-5xl sm:text-7xl tracking-tightest leading-[0.92]">
         Developed by<br />
         <span className="text-accent">Mohammad Sufiyan Aasim </span>
@@ -60,7 +60,7 @@ export default function Credits() {
         </a>
       </h1>
       <p className="mt-5 text-graphite max-w-xl">
-        QueueLess — a cloud-native smart token & queue management system. Designed,
+        SARAL — a cloud-native smart token & queue management system. Designed,
         engineered, and shipped end-to-end: architecture, backend, realtime cloud
         infrastructure, frontend, analytics, and delivery pipeline.
       </p>

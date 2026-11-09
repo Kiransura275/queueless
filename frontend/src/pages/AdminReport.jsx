@@ -102,20 +102,20 @@ export default function AdminReport() {
     <div className="max-w-4xl mx-auto px-6 py-10 print:py-0 print:px-0">
       
       {/* Print-only header — token ticket style */}
-      <div className="hidden print:block mb-8" style={{ fontFamily: '"Georgia", serif' }}>
+      <div className="hidden print:block mb-8" style={{ fontFamily: '"Inter", sans-serif' }}>
         {/* Dark stripe — matches token header */}
         <div style={{ background: '#1A1714', padding: '14px 28px', display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
           <div>
-            <div style={{ color: '#F7F3EC', fontSize: '12px', letterSpacing: '0.18em', textTransform: 'uppercase', fontWeight: '600' }}>
-              {cfg.orgName && cfg.orgName !== 'QueueLess' ? cfg.orgName : 'QueueLess'}
+            <div style={{ color: '#E6ECEB', fontSize: '12px', letterSpacing: '0.18em', textTransform: 'uppercase', fontWeight: '600', fontFamily: '"Inter", sans-serif' }}>
+              {cfg.orgName && cfg.orgName !== 'SARAL' ? cfg.orgName : 'SARAL'}
             </div>
             {cfg.location && (
-              <div style={{ color: '#A89E94', fontSize: '10px', marginTop: '4px' }}>{cfg.location}</div>
+              <div style={{ color: '#9AA7A5', fontSize: '10px', marginTop: '4px' }}>{cfg.location}</div>
             )}
           </div>
           <div style={{ textAlign: 'right' }}>
-            <div style={{ color: '#F7F3EC', fontSize: '11px', letterSpacing: '0.12em', textTransform: 'uppercase' }}>Detailed Report</div>
-            <div style={{ color: '#A89E94', fontSize: '9px', marginTop: '4px' }}>
+            <div style={{ color: '#E6ECEB', fontSize: '11px', letterSpacing: '0.12em', textTransform: 'uppercase', fontFamily: '"Inter", sans-serif' }}>Detailed Report</div>
+            <div style={{ color: '#9AA7A5', fontSize: '9px', marginTop: '4px' }}>
               {new Date().toLocaleDateString()} · {new Date().toLocaleTimeString()}
             </div>
           </div>
@@ -276,9 +276,9 @@ export default function AdminReport() {
       )}
 
       {/* Print-only footer */}
-      <div className="hidden print:block mt-12 pt-4" style={{ borderTop: '1px solid #E4DDD3' }}>
-        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', fontSize: '9px', color: '#8A8278', fontFamily: '"Georgia", serif', letterSpacing: '0.08em' }}>
-          <span>{cfg.orgName && cfg.orgName !== 'QueueLess' ? cfg.orgName : 'QueueLess'}{cfg.location ? ` · ${cfg.location}` : ''}</span>
+      <div className="hidden print:block mt-12 pt-4" style={{ borderTop: '1px solid #2A333A' }}>
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', fontSize: '9px', color: '#9AA7A5', fontFamily: '"Inter", sans-serif', letterSpacing: '0.08em' }}>
+          <span>{cfg.orgName && cfg.orgName !== 'SARAL' ? cfg.orgName : 'SARAL'}{cfg.location ? ` · ${cfg.location}` : ''}</span>
           <span style={{ fontFamily: 'monospace' }}>{RELEASE_BADGE} · cloud-native token qms</span>
         </div>
       </div>

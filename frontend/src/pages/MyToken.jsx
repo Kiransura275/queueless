@@ -64,7 +64,7 @@ function PrintableToken({ token, serviceLabel, orgName, location }) {
         <div style={{ background: '#1A1714', padding: '14px 24px', display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
           <div>
             <div style={{ color: '#F7F3EC', fontSize: '11px', letterSpacing: '0.18em', textTransform: 'uppercase', fontWeight: '600' }}>
-              {orgName || 'QueueLess'}
+              {orgName || 'SARAL'}
             </div>
             {location && (
               <div style={{ color: '#A89E94', fontSize: '9px', marginTop: '3px' }}>{location}</div>

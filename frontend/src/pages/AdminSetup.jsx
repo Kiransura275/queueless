@@ -30,7 +30,7 @@ export default function AdminSetup() {
   useEffect(() => {
     if (!cfg) return;
     if (cfg.industry) setIndustry(cfg.industry);
-    if (cfg.orgName && cfg.orgName !== 'QueueLess') setOrgName(cfg.orgName);
+    if (cfg.orgName && cfg.orgName !== 'SARAL') setOrgName(cfg.orgName);
     if (cfg.location) { setLocation(cfg.location); setOtherCity(!CITIES.includes(cfg.location)); }
     if (cfg.displayMessage) setDisplayMessage(cfg.displayMessage);
     if (cfg.slaMinutes) setSlaMinutes(String(cfg.slaMinutes));
@@ -69,7 +69,7 @@ export default function AdminSetup() {
     }
   };
 
-  const isEditing = cfg?.orgName && cfg.orgName !== 'QueueLess';
+  const isEditing = cfg?.orgName && cfg.orgName !== 'SARAL';
 
   return (
     <div className="max-w-4xl mx-auto px-4 sm:px-6 xl:px-10 py-12">

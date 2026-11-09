@@ -33,18 +33,15 @@ export default function Home() {
       {/* Hero */}
       <div className="grid lg:grid-cols-12 gap-8 lg:gap-12 items-center">
         <div className="lg:col-span-6">
-          <img
-            src={dark ? '/svg/queueless-wordmark-dark.svg' : '/svg/queueless-lockup.svg'}
-            alt="QueueLess - Smart Queue Management"
-            className="h-12 sm:h-16 w-auto mb-6"
-          />
+          <span className="font-semibold text-ink text-lg tracking-tight">saral</span>
           <h1 className="font-display text-5xl sm:text-6xl lg:text-7xl tracking-tightest leading-[0.95]">
             Take a digital<br />
             <em className="text-accent">token.</em> Watch<br />
             your position live.
           </h1>
           <p className="mt-6 text-base text-graphite max-w-lg leading-relaxed">
-            QueueLess replaces paper slips and crowded waiting rooms with a real-time, browser-based queue.
+            Simple queues. Smarter waiting.
+            SARAL replaces paper slips and crowded waiting rooms with a real-time, browser-based queue.
             Pull a token from anywhere — a phone in a parking lot, a laptop across town — and arrive at the
             counter only when the screen says it's your turn.
           </p>
