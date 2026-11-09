@@ -61,7 +61,7 @@ export default function AdminAppointments() {
             key={f}
             onClick={() => setFilter(f)}
             className={`px-4 py-1.5 text-sm capitalize transition-colors ${
-              filter === f ? 'bg-ink text-paper' : 'text-graphite hover:text-ink'
+              filter === f ? 'bg-cream text-ink' : 'text-graphite hover:text-ink'
             }`}
           >
             {f} <span className="ml-1 text-xs opacity-60">({counts[f]})</span>

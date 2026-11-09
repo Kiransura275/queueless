@@ -107,8 +107,8 @@ export default function Layout({ children }) {
                 to={l.to}
                 className={`px-3 py-1.5 transition-colors rounded font-medium ${
                   loc.pathname === l.to
-                    ? 'text-ink bg-ink/5'
-                    : 'text-graphite hover:text-ink hover:bg-ink/5'
+                    ? 'text-accent bg-accent/10'
+                    : 'text-graphite hover:text-ink hover:bg-cream/40'
                 }`}
               >
                 {l.label}
@@ -143,7 +143,7 @@ export default function Layout({ children }) {
                   onClick={() => setAdminDropOpen(o => !o)}
                   className={`flex items-center gap-1.5 px-3 py-1.5 border transition-colors text-xs font-medium tracking-wide ${
                     adminDropOpen
-                      ? 'border-ink bg-ink text-paper'
+                      ? 'border-accent bg-accent text-paper'
                       : 'border-rule text-graphite hover:border-ink hover:text-ink'
                   }`}
                   aria-expanded={adminDropOpen}
@@ -167,7 +167,7 @@ export default function Layout({ children }) {
                         <span className="text-xs text-graphite">{dark ? 'Dark mode' : 'Light mode'}</span>
                         <button
                           onClick={toggleTheme}
-                          className={`relative inline-flex h-5 w-9 items-center rounded-full transition-colors focus:outline-none ${dark ? 'bg-ink' : 'bg-rule'}`}
+                          className={`relative inline-flex h-5 w-9 items-center rounded-full transition-colors focus:outline-none ${dark ? 'bg-accent' : 'bg-rule'}`}
                           role="switch" aria-checked={dark} aria-label="Toggle dark mode"
                         >
                           <span className={`inline-block h-3.5 w-3.5 rounded-full bg-paper shadow transition-transform ${dark ? 'translate-x-4' : 'translate-x-1'}`} />
@@ -222,7 +222,7 @@ export default function Layout({ children }) {
                   onClick={() => setAdminDropOpen(o => !o)}
                   className={`flex items-center gap-1.5 px-3 py-1.5 border transition-colors text-xs font-medium tracking-wide ${
                     adminDropOpen
-                      ? 'border-ink bg-ink text-paper'
+                      ? 'border-accent bg-accent text-paper'
                       : 'border-rule text-graphite hover:border-ink hover:text-ink'
                   }`}
                   aria-expanded={adminDropOpen}
@@ -247,7 +247,7 @@ export default function Layout({ children }) {
                         <button
                           onClick={toggleTheme}
                           className={`relative inline-flex h-5 w-9 items-center rounded-full transition-colors focus:outline-none ${
-                            dark ? 'bg-ink' : 'bg-rule'
+                            dark ? 'bg-accent' : 'bg-rule'
                           }`}
                           role="switch"
                           aria-checked={dark}
@@ -344,7 +344,7 @@ export default function Layout({ children }) {
                     <span className="text-graphite text-xs">{dark ? 'Dark mode' : 'Light mode'}</span>
                     <button
                       onClick={toggleTheme}
-                      className={`relative inline-flex h-5 w-9 items-center rounded-full transition-colors ${dark ? 'bg-ink' : 'bg-rule'}`}
+                      className={`relative inline-flex h-5 w-9 items-center rounded-full transition-colors ${dark ? 'bg-accent' : 'bg-rule'}`}
                       aria-label="Toggle theme"
                     >
                       <span className={`inline-block h-3.5 w-3.5 rounded-full bg-paper shadow transition-transform ${dark ? 'translate-x-4' : 'translate-x-1'}`} />
@@ -375,7 +375,7 @@ export default function Layout({ children }) {
                     <span className="text-graphite text-xs">{dark ? 'Dark mode' : 'Light mode'}</span>
                     <button
                       onClick={toggleTheme}
-                      className={`relative inline-flex h-5 w-9 items-center rounded-full transition-colors ${dark ? 'bg-ink' : 'bg-rule'}`}
+                      className={`relative inline-flex h-5 w-9 items-center rounded-full transition-colors ${dark ? 'bg-accent' : 'bg-rule'}`}
                       aria-label="Toggle theme"
                     >
                       <span className={`inline-block h-3.5 w-3.5 rounded-full bg-paper shadow transition-transform ${dark ? 'translate-x-4' : 'translate-x-1'}`} />
@@ -396,7 +396,7 @@ export default function Layout({ children }) {
                   <span className="text-graphite text-xs">{dark ? 'Dark mode' : 'Light mode'}</span>
                   <button
                     onClick={toggleTheme}
-                    className={`relative inline-flex h-5 w-9 items-center rounded-full transition-colors ${dark ? 'bg-ink' : 'bg-rule'}`}
+                    className={`relative inline-flex h-5 w-9 items-center rounded-full transition-colors ${dark ? 'bg-accent' : 'bg-rule'}`}
                     aria-label="Toggle theme"
                   >
                     <span className={`inline-block h-3.5 w-3.5 rounded-full bg-paper shadow transition-transform ${dark ? 'translate-x-4' : 'translate-x-1'}`} />

@@ -76,7 +76,7 @@ export default function Notifications() {
       <div className="flex flex-wrap gap-2 mb-6">
         {FILTERS.map(f => (
           <button key={f.key} onClick={() => setFilter(f.key)}
-            className={`text-sm px-3 py-1.5 border transition-colors ${filter === f.key ? 'bg-ink text-paper border-ink' : 'border-rule text-graphite hover:border-ink hover:text-ink'}`}>
+            className={`text-sm px-3 py-1.5 border transition-colors ${filter === f.key ? 'bg-accent text-paper border-accent' : 'border-rule text-graphite hover:border-ink hover:text-ink'}`}>
             {f.label}
             {f.key === 'unread' && unread > 0 && <span className="ml-1.5 text-xs">({unread})</span>}
           </button>

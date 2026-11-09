@@ -146,7 +146,7 @@ function WaitingList({ tokens, industry }) {
   }
   return (
     <div className="border border-rule">
-      <div className="px-4 py-3 bg-ink text-paper text-xs tracking-[0.18em] uppercase font-medium grid grid-cols-12 gap-3">
+      <div className="px-4 py-3 bg-cream text-ink text-xs tracking-[0.18em] uppercase font-medium grid grid-cols-12 gap-3">
         <div className="col-span-2">#</div>
         <div className="col-span-5">Service</div>
         <div className="col-span-3">Issued</div>
@@ -760,7 +760,7 @@ export default function AdminDashboard() {
               key={s.id}
               onClick={() => setActiveTab(i)}
               className={`shrink-0 px-4 py-2 text-sm border transition-colors ${
-                activeTab === i ? 'bg-ink text-paper border-ink' : 'border-rule text-graphite hover:border-ink hover:text-ink'
+                activeTab === i ? 'bg-accent text-paper border-accent' : 'border-rule text-graphite hover:border-ink hover:text-ink'
               }`}
             >
               {getServiceLabel(s.id, cfg.industry)}

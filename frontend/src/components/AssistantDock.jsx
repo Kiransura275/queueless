@@ -73,7 +73,7 @@ export default function AssistantDock() {
       {/* Floating launcher — present on every screen */}
       <button
         onClick={() => setOpen(o => !o)}
-        className="fixed bottom-5 left-5 z-[60] w-14 h-14 rounded-full bg-ink text-paper shadow-lg flex items-center justify-center hover:bg-accent transition-colors print:hidden"
+        className="fixed bottom-5 left-5 z-[60] w-14 h-14 rounded-full bg-cream text-ink shadow-lg flex items-center justify-center hover:bg-accent hover:text-paper transition-colors print:hidden"
         aria-label={open ? 'Close assistant' : 'Open AI assistant'}
         title="AI assistant"
       >
@@ -83,7 +83,7 @@ export default function AssistantDock() {
       {/* Panel */}
       {open && (
         <div className="fixed bottom-24 left-5 z-[60] w-[min(calc(100vw-2.5rem),24rem)] h-[min(calc(100vh-9rem),32rem)] bg-paper border border-rule shadow-2xl flex flex-col print:hidden">
-          <div className="px-4 py-3 border-b border-rule flex items-center justify-between bg-ink text-paper">
+          <div className="px-4 py-3 border-b border-rule flex items-center justify-between bg-cream text-ink">
             <div className="flex items-center gap-2">
               <span className="text-base">✦</span>
               <div>
@@ -112,7 +112,7 @@ export default function AssistantDock() {
             )}
             {messages.map((m, i) => (
               <div key={i} className={m.role === 'user' ? 'flex justify-end' : 'flex justify-start'}>
-                <div className={`max-w-[85%] px-3 py-2 ${m.role === 'user' ? 'bg-ink text-paper' : m.error ? 'bg-accent/5 border border-accent/30 text-accent-deep' : 'bg-cream border border-rule'}`}>
+                <div className={`max-w-[85%] px-3 py-2 ${m.role === 'user' ? 'bg-accent text-paper' : m.error ? 'bg-accent/5 border border-accent/30 text-accent-deep' : 'bg-cream border border-rule'}`}>
                   {m.role === 'assistant' ? <div className="leading-snug">{renderText(m.content)}</div> : m.content}
                 </div>
               </div>

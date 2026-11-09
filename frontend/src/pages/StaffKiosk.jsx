@@ -57,7 +57,7 @@ export default function StaffKiosk() {
             <div
               key={i}
               className={`w-4 h-4 rounded-full border-2 transition-colors ${
-                i < digits.length ? 'bg-ink border-ink' : 'bg-transparent border-rule'
+                i < digits.length ? 'bg-accent border-accent' : 'bg-transparent border-rule'
               }`}
             />
           ))}
@@ -78,7 +78,7 @@ export default function StaffKiosk() {
                 className={`aspect-square flex items-center justify-center font-display text-3xl tracking-tightest border transition-colors ${
                   isBack
                     ? 'border-rule text-graphite hover:border-ink hover:text-ink text-xl'
-                    : 'border-rule hover:border-ink hover:bg-ink hover:text-paper'
+                    : 'border-rule hover:border-ink hover:bg-accent hover:text-paper'
                 } disabled:opacity-40`}
               >
                 {k}

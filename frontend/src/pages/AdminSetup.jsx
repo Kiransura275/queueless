@@ -129,7 +129,7 @@ export default function AdminSetup() {
               onClick={() => setIndustry(key)}
               className={`text-left p-6 border transition-all ${
                 industry === key
-                  ? 'border-ink bg-ink text-paper'
+                  ? 'border-accent bg-accent text-paper'
                   : 'border-rule bg-cream hover:border-ink'
               }`}
             >

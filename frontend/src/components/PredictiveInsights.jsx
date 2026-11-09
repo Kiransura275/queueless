@@ -89,7 +89,7 @@ export default function PredictiveInsights() {
       {/* Per-queue wait predictions */}
       {data.queues.length > 0 && (
         <div className="border border-rule">
-          <div className="px-4 py-2.5 bg-ink text-paper text-xs tracking-[0.18em] uppercase font-medium grid grid-cols-12 gap-2">
+          <div className="px-4 py-2.5 bg-cream text-ink text-xs tracking-[0.18em] uppercase font-medium grid grid-cols-12 gap-2">
             <div className="col-span-5">Queue</div>
             <div className="col-span-2 text-right">Waiting</div>
             <div className="col-span-3 text-right">Predicted wait</div>

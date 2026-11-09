@@ -234,7 +234,7 @@ export default function MessagingDeck() {
                 return (
                   <div key={m.id} className={`group flex ${mine ? 'justify-end' : 'justify-start'}`}>
                     <div className="max-w-[85%]">
-                      <div className={`px-3 py-2 ${mine ? 'bg-ink text-paper' : 'bg-cream border border-rule'}`}>
+                      <div className={`px-3 py-2 ${mine ? 'bg-accent text-paper' : 'bg-cream border border-rule'}`}>
                         {!mine && <div className="text-[10px] text-graphite mb-0.5">{m.senderName}</div>}
                         {m.text && <div className="leading-snug whitespace-pre-wrap break-words">{m.text}</div>}
                         {m.attachment && (
@@ -287,7 +287,7 @@ export default function MessagingDeck() {
       {/* Docked bar (always visible) */}
       <button
         onClick={toggleOpen}
-        className="w-full bg-ink text-paper px-4 py-3 flex items-center justify-between shadow-lg hover:bg-ink/90 transition-colors"
+        className="w-full bg-cream text-ink px-4 py-3 flex items-center justify-between shadow-lg hover:bg-cream/80 transition-colors"
         aria-expanded={open}
         aria-label="Team messaging"
       >

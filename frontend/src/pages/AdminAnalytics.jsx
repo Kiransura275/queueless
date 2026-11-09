@@ -19,7 +19,7 @@ function BarChart({ data, maxVal, color = '#4B6FBF', labelKey, valueKey }) {
             className="w-full transition-all"
             style={{ height: `${(d[valueKey] / max) * 100}%`, background: color, opacity: 0.85 }}
           />
-          <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-1 hidden group-hover:block text-xs bg-ink text-paper px-1.5 py-0.5 whitespace-nowrap z-10">
+          <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-1 hidden group-hover:block text-xs bg-cream text-ink px-1.5 py-0.5 whitespace-nowrap z-10">
             {d[labelKey]}: {d[valueKey]}
           </div>
         </div>
@@ -178,7 +178,7 @@ export default function AdminAnalytics() {
           <div className="overflow-x-auto">
             <table className="w-full text-sm">
               <thead>
-                <tr className="bg-ink text-paper text-xs tracking-[0.18em] uppercase">
+                <tr className="bg-cream text-ink text-xs tracking-[0.18em] uppercase">
                   <th className="px-4 py-3 text-left font-medium">Staff Member</th>
                   <th className="px-4 py-3 text-right font-medium">Tokens Served</th>
                   <th className="px-4 py-3 text-right font-medium">Avg Service Time</th>
@@ -266,7 +266,7 @@ export default function AdminAnalytics() {
                 <div key={h} className="flex-1 flex flex-col justify-end group relative h-full">
                   <div className="w-full" style={{ height: `${pct}%`, background: COLORS[0], opacity: 0.8 }} />
                   {total > 0 && (
-                    <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-1 hidden group-hover:block text-xs bg-ink text-paper px-1.5 py-0.5 whitespace-nowrap z-10">
+                    <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-1 hidden group-hover:block text-xs bg-cream text-ink px-1.5 py-0.5 whitespace-nowrap z-10">
                       {fmt12h(h)}: {total}
                     </div>
                   )}
@@ -287,7 +287,7 @@ export default function AdminAnalytics() {
           <p className="text-sm text-graphite mb-5">
             Based on {totalIssued} tokens and {waitDisplay} avg wait. Open additional counters during flagged hours.
           </p>
-          <div className="bg-ink text-paper p-5 text-sm flex-1">
+          <div className="bg-cream text-ink p-5 text-sm flex-1">
             {staffingRecommendation.length > 0 ? (
               <>
                 <div className="text-xs uppercase tracking-widest text-paper/60 mb-3">Peak load detected</div>

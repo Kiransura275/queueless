@@ -105,7 +105,7 @@ export default function TakeToken() {
                 isServicePaused
                   ? 'border-rule bg-cream opacity-50 cursor-not-allowed'
                   : isSelected
-                    ? 'border-ink bg-ink text-paper'
+                    ? 'border-accent bg-accent text-paper'
                     : 'border-rule bg-cream hover:border-ink'
               }`}
             >
@@ -170,7 +170,7 @@ export default function TakeToken() {
                   onClick={() => setGroupSize(n)}
                   className={`w-10 h-10 text-sm font-medium border transition-all ${
                     groupSize === n
-                      ? 'bg-ink text-paper border-ink'
+                      ? 'bg-accent text-paper border-accent'
                       : 'bg-cream text-ink border-rule hover:border-ink'
                   }`}
                 >

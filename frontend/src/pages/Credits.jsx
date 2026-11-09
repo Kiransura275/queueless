@@ -74,14 +74,14 @@ export default function Credits() {
           <img
             src="https://github.com/SufiyanAasim.png"
             alt="Mohammad Sufiyan Aasim"
-            className="w-20 h-20 shrink-0 object-cover border border-rule bg-ink"
+            className="w-20 h-20 shrink-0 object-cover border border-rule bg-cream"
             onError={(e) => {
               // Fallback to text initials if image fails to load
               e.target.style.display = 'none';
               e.target.nextSibling.style.display = 'flex';
             }}
           />
-          <div className="hidden w-20 h-20 shrink-0 bg-ink text-paper font-display text-4xl flex items-center justify-center tracking-tightest">
+          <div className="hidden w-20 h-20 shrink-0 bg-cream text-ink font-display text-4xl flex items-center justify-center tracking-tightest">
             MS
           </div>
           <div className="min-w-0 flex-1">

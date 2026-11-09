@@ -35,7 +35,7 @@ export default function ShareDialog({ payload, onClose }) {
   };
 
   return (
-    <div className="fixed inset-0 z-[70] bg-ink/40 flex items-center justify-center p-4" onClick={onClose}>
+    <div className="fixed inset-0 z-[70] bg-paper/60 flex items-center justify-center p-4" onClick={onClose}>
       <div className="bg-paper border border-rule shadow-2xl w-full max-w-md p-6" onClick={e => e.stopPropagation()}>
         <div className="flex items-center justify-between mb-4">
           <h3 className="font-display text-2xl">Share</h3>

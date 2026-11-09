@@ -168,7 +168,7 @@ export default function AssistantWorkspace() {
               </div>
             ) : active.messages.map(m => (
               <div key={m.id} className={m.role === 'user' ? 'flex justify-end' : 'flex justify-start'}>
-                <div className={`max-w-[80%] px-3 py-2 ${m.role === 'user' ? 'bg-ink text-paper' : 'bg-cream border border-rule'}`}>
+                <div className={`max-w-[80%] px-3 py-2 ${m.role === 'user' ? 'bg-accent text-paper' : 'bg-cream border border-rule'}`}>
                   {m.role === 'assistant' ? <div className="leading-snug">{renderText(m.content)}</div> : m.content}
                 </div>
               </div>

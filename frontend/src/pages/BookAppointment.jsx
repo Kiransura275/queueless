@@ -97,7 +97,7 @@ export default function BookAppointment() {
                 type="button"
                 onClick={() => set('service', s.id)}
                 className={`text-left p-4 border transition-all ${
-                  form.service === s.id ? 'border-ink bg-ink text-paper' : 'border-rule bg-cream hover:border-ink'
+                  form.service === s.id ? 'border-accent bg-accent text-paper' : 'border-rule bg-cream hover:border-ink'
                 }`}
               >
                 <div className="text-xs opacity-60 mb-1">{form.service === s.id ? 'Selected' : 'Service'}</div>

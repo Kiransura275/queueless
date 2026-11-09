@@ -119,7 +119,7 @@ export default function AdminStaff() {
         </div>
       ) : (
         <div className="border border-rule mb-8">
-          <div className="px-4 py-3 bg-ink text-paper text-xs tracking-[0.18em] uppercase font-medium grid grid-cols-12 gap-3">
+          <div className="px-4 py-3 bg-cream text-ink text-xs tracking-[0.18em] uppercase font-medium grid grid-cols-12 gap-3">
             <div className="col-span-1"></div>
             <div className="col-span-3">Name</div>
             <div className="col-span-3">Username</div>
